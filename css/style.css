@@ -20,18 +20,18 @@ section {
 .slider_3col {
 display: grid;
 gap: 10px 27px;
-grid-template-columns: 190px 840px 190px;
+grid-template-columns: 15% 65.7% 15%;
 	
 }
 .content-area {
 	display:grid;
 	grid-gap: 10px 27px;
-	grid-template-columns: 948px 299px;
+	grid-template-columns: 74.5% 23.3%;
 }
 .footer {
 	display: grid;
 	grid-gap: 10px 27px;
-	grid-template-columns: repeat(4, 298px);
+	grid-template-columns: repeat(4, 23.4%);
 	
 }
 .footer-four-col {
@@ -45,15 +45,15 @@ grid-template-columns: 190px 840px 190px;
 	}
 	.slider_3col {
 		gap: 10px 25px;
-		grid-template-columns: 250px 510px 250px;
+		grid-template-columns: 23.5% 48.5% 23.5%;
 	}
 	.content-area {
 		grid-gap: 10px 25px;
-		grid-template-columns: 700px 332px;
+		grid-template-columns: 66% 31.8%;
 	}
 	.footer {
-		grid-gap: 10px 25px;
-		grid-template-columns: repeat(4, 245px);
+		grid-gap: 10px 10px;
+		grid-template-columns: repeat(4, 24.3%);
 	}
 }
 
@@ -64,16 +64,18 @@ grid-template-columns: 190px 840px 190px;
 	}
 	.slider_3col {
 		grid-column-gap: 18px;
-		grid-template-columns: 270px 270px 270px;
+		grid-template-columns: 31.97% 31.97% 31.97%;
 	}
 	.content-area {
 		grid-column-gap: 18px;
-		grid-template-columns: 415px 415px;
+		grid-template-columns: 49% 49%;
 	}
 	.footer {
-		grid-gap: 10px 18px;
-		grid-template-columns: 410px 410px;
+		grid-gap: 10px;
+		grid-template-columns: 49% 49%;
 	}
+	.footer-four-col {
+		margin-right: 0px;
 }
 
 /* Mobiltelefoner: mindre än 768px */
