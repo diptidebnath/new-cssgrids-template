@@ -38,8 +38,56 @@ grid-template-columns: 190px 840px 190px;
 	margin: 10px;
 	text-align: center;
 }
-
+/* Mindre desktopskärmar: mellan 1200px och 960px */
 @media only screen and (max-width: 1200px) and (min-width: 960px)  {
-	
-
+	section.header {
+		width: 100%;
+	}
+	.slider_3col {
+		gap: 10px 25px;
+		grid-template-columns: 250px 510px 250px;
+	}
+	.content-area {
+		grid-gap: 10px 25px;
+		grid-template-columns: 700px 332px;
+	}
+	.footer {
+		grid-gap: 10px 25px;
+		grid-template-columns: repeat(4, 245px);
+	}
 }
+
+/* Tablets såsom Ipad: mellan 960px och 768px */
+@media only screen and (max-width: 960px) and (min-width: 768px){
+	section.header {
+		width: auto;
+	}
+	.slider_3col {
+		grid-column-gap: 18px;
+		grid-template-columns: 270px 270px 270px;
+	}
+	.content-area {
+		grid-column-gap: 18px;
+		grid-template-columns: 415px 415px;
+	}
+	.footer {
+		grid-gap: 10px 18px;
+		grid-template-columns: 410px 410px;
+	}
+}
+
+/* Mobiltelefoner: mindre än 768px */
+@media only screen and (max-width:768px) {
+	.slider_3col {
+		
+		grid-template-columns: 100%;
+	}
+	.content-area {
+	
+		grid-template-columns:100%;
+	}
+	.footer {
+		
+		grid-template-columns:100%;
+	}
+  }
